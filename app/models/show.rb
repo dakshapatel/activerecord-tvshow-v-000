@@ -10,7 +10,7 @@ class Show < ActiveRecord::Base
     #  returns the tv show with the highest rating
     #Show.order(rating: :DESC).first
   #Show.find(:name).highest_rating
-Show.find_by.highest_rating
+Show.highest.rating.order(name: :desc)
 
   end
 
