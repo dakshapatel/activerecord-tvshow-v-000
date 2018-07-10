@@ -10,7 +10,7 @@ class Show < ActiveRecord::Base
     #  returns the tv show with the highest rating
     Show.order(rating: :DESC).first
   #Show.find(:name).highest_rating
-Show.highest_rating.order(name: :desc)
+#Show.highest_rating.order(name: :desc)
 
   end
 
@@ -21,7 +21,7 @@ Show.highest_rating.order(name: :desc)
 
   def self.least_popular_show
     #  returns the tv show with the lowest rating
-    Show.minimum('rating')
+    Show.order(rating: :DESC).last
   end
 
   def self.ratings_sum
