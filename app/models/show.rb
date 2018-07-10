@@ -10,7 +10,7 @@ class Show < ActiveRecord::Base
     #  returns the tv show with the highest rating
   Show.find_by.highest_rating
 
-    Show.
+
   end
 
   def self.lowest_rating
